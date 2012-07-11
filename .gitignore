@@ -1,0 +1,6 @@
+*.pyc
+*.log
+*~
+build
+dist
+P1tr.egg-info
