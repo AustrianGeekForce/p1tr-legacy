@@ -5,3 +5,4 @@ build
 dist
 P1tr.egg-info
 __pycache__
+*.swp
