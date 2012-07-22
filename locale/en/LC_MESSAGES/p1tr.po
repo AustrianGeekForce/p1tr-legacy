@@ -1,0 +1,294 @@
+# translation of p1tr.po to english
+# P1tr
+# Copyright (C) 2008 AustrianGeekForce
+# This file is distributed under the same license as the P1tr package.
+#
+# Christian Ortner <chris.ortner@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: p1tr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-04-04 20:04+0200\n"
+"PO-Revision-Date: 2008-04-06 00:31+0200\n"
+"Last-Translator: Christian Ortner <chris.ortner@gmail.com>\n"
+"Language-Team: english <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: config.py:34
+#, python-format
+msgid "Using configuration file \"%s\"."
+msgstr "Using configuration file \"%s\"."
+
+#: config.py:38
+msgid "Error: Couldn't find any configuration file."
+msgstr "Error: Couldn't find any configuration file."
+
+#: config.py:58
+#, python-format
+msgid "Error: No server defined for connection \"%s\"."
+msgstr "Error: No server defined for connection \"%s\"."
+
+#: config.py:65
+#, python-format
+msgid "Error: Connection \"%s\" has no channel definition."
+msgstr "Error: Connection \"%s\" has no channel definition."
+
+#: config.py:69
+#, python-format
+msgid "Warning: Channel \"%s\" doesn't start with a hash (#); ignoring it."
+msgstr "Warning: Channel \"%s\" doesn't start with a hash (#); ignoring it."
+
+#: config.py:72
+#, python-format
+msgid "Error: No valid channel defined for connection \"%s\"."
+msgstr "Error: No valid channel defined for connection \"%s\"."
+
+#: config.py:90
+#, python-format
+msgid "Loaded configuration for connection \"%s\"."
+msgstr "Loaded configuration for connection \"%s\"."
+
+#: config.py:93
+msgid "Error: There isn't any valid connection defined in the configuration file."
+msgstr "Error: There isn't any valid connection defined in the configuration file."
+
+#: lib/core.py:125
+msgid "connection failed: "
+msgstr "connection failed: "
+
+#: lib/helpers.py:19 lib/helpers.py:33
+msgid "ERROR: No correct value given."
+msgstr "ERROR: No correct value given."
+
+#: lib/plugin.py:11
+msgid "This plugin has no help"
+msgstr "This plugin has no help"
+
+#: lib/plugins.py:31
+#, python-format
+msgid "Loaded plugin \"%s\"."
+msgstr "Loaded plugin \"%s\"."
+
+#: lib/plugins.py:33
+msgid "ERROR: Invalid plugin specified"
+msgstr "ERROR: Invalid plugin specified"
+
+#: lib/plugins.py:73
+msgid "Help topics: "
+msgstr "Help topics: "
+
+#: plugins/auth.py:8
+msgid ""
+"Usage: register <password> - registers your nick with password. Better do "
+"this using private adressing."
+msgstr ""
+"Usage: register <password> - registers your nick with password. Better do "
+"this using private adressing."
+
+#: plugins/auth.py:9
+msgid ""
+"Usage: auth <password> - show that you are you by using your password from "
+"registration. Better do this using private adressing."
+msgstr ""
+"Usage: auth <password> - show that you are you by using your password from "
+"registration. Better do this using private adressing."
+
+#: plugins/auth.py:10
+msgid "Authentification plugin; topics: "
+msgstr "Authentification plugin; topics: "
+
+#: plugins/auth.py:26
+msgid "You're authenticated by now."
+msgstr "You're authenticated by now."
+
+#: plugins/auth.py:28
+msgid "Passwords do NOT match. DO NOT TRY TO FOOL ME!"
+msgstr "Passwords do NOT match. DO NOT TRY TO FOOL ME!"
+
+#: plugins/auth.py:40
+msgid "Your nick has been successfully registered!"
+msgstr "Your nick has been successfully registered!"
+
+#: plugins/auth.py:42
+msgid "Sorry! Your nick is already registered."
+msgstr "Sorry! Your nick is already registered."
+
+#: plugins/auth.py:59
+msgid "You need do specify the user and the level"
+msgstr "You need do specify the user and the level"
+
+#: plugins/basics.py:9
+msgid "Usage: join <channel> - makes P1tr join channel"
+msgstr "Usage: join <channel> - makes P1tr join channel"
+
+#: plugins/basics.py:10
+msgid ""
+"Usage: part <channel> - makes P1tr part channel. If channel is not given he "
+"parts the current one"
+msgstr ""
+"Usage: part <channel> - makes P1tr part channel. If channel is not given he "
+"parts the current one"
+
+#: plugins/basics.py:11
+msgid "Usage: quit - shuts P1tr down"
+msgstr "Usage: quit - shuts P1tr down"
+
+#: plugins/basics.py:12
+msgid "Usage: topic <string> - sets topic to string"
+msgstr "Usage: topic <string> - sets topic to string"
+
+#: plugins/basics.py:13
+msgid ""
+"Usage: mode <mode> <nick|mask> - sets channel modes to mode; add nick or "
+"mask if required for the particular mode"
+msgstr ""
+"Usage: mode <mode> <nick|mask> - sets channel modes to mode; add nick or "
+"mask if required for the particular mode"
+
+#: plugins/basics.py:14
+msgid "Usage: ping - says pong"
+msgstr "Usage: ping - says pong"
+
+#: plugins/basics.py:15
+msgid "Plugin for basic IRC operations; topics: "
+msgstr "Plugin for basic IRC operations; topics: "
+
+#: plugins/basics.py:49
+msgid "ERROR: Check your mode syntax and if the bot has sufficient rights."
+msgstr "ERROR: Check your mode syntax and if the bot has sufficient rights."
+
+#: plugins/basics.py:56
+msgid ": I'm going to kill you!"
+msgstr ": I'm going to kill you!"
+
+#: plugins/factoids.py:9
+msgid "Usage: factoids  - shows a list of keywords"
+msgstr "Usage: factoids  - shows a list of keywords"
+
+#: plugins/factoids.py:10
+msgid "Examples: arthur is the king of the britons; romans are hook-nosed"
+msgstr "Examples: arthur is the king of the britons; romans are hook-nosed"
+
+#: plugins/factoids.py:11
+msgid ""
+"Example: arthur? - response: 0. arthur is the king of the britons\\n1. "
+"arthur is seeking the holy grail"
+msgstr ""
+"Example: arthur? - response: 0. arthur is the king of the britons\\n1. "
+"arthur is seeking the holy grail"
+
+#: plugins/factoids.py:12
+msgid ""
+"Usage: forget <word> <id> - If id is given it makes me delete the word's "
+"fact with id, otherwise i forget everything about word."
+msgstr ""
+"Usage: forget <word> <id> - If id is given it makes me delete the word's "
+"fact with id, otherwise i forget everything about word."
+
+#: plugins/factoids.py:13
+msgid "Usage: random_fact - displays a random fact from any word"
+msgstr "Usage: random_fact - displays a random fact from any word"
+
+#: plugins/factoids.py:14
+msgid "Factoids stores strings to a keyword; topics: "
+msgstr "Factoids stores strings to a keyword; topics: "
+
+#: plugins/factoids.py:53
+msgid "Invalid range, dude."
+msgstr "Invalid range, dude."
+
+#: plugins/factoids.py:61
+msgid "is"
+msgstr "is"
+
+#: plugins/factoids.py:61
+msgid "are"
+msgstr "are"
+
+#: plugins/factoids.py:83
+#, python-format
+msgid "Forgot %s's fact number %s"
+msgstr "Forgot %s's fact number %s"
+
+#: plugins/factoids.py:89 plugins/factoids.py:98
+#, python-format
+msgid "Forgot everything about %s"
+msgstr "Forgot everything about %s"
+
+#: plugins/factoids.py:93 plugins/factoids.py:145
+#, python-format
+msgid "I don't know anything about %s"
+msgstr "I don't know anything about %s"
+
+#: plugins/factoids.py:101
+#, python-format
+msgid "Forgot \"%s %s\""
+msgstr "Forgot \"%s %s\""
+
+#: plugins/factoids.py:119
+msgid "You already told me that."
+msgstr "You already told me that."
+
+#: plugins/factoids.py:125
+msgid "Memorized."
+msgstr "Memorized."
+
+#: plugins/factoids.py:159
+msgid "Vault file corrupted or non-existent. Starting new one."
+msgstr "Vault file corrupted or non-existent. Starting new one."
+
+#: plugins/fortune.py:8
+msgid ""
+"Usage: fortune <type> - displays a random fortune of type (optional). See "
+"help fortune types"
+msgstr ""
+"Usage: fortune <type> - displays a random fortune of type (optional). See "
+"help fortune types"
+
+#: plugins/fortune.py:9
+msgid "Available fortune types: fortunes, literature, riddles; default: all. "
+msgstr "Available fortune types: fortunes, literature, riddles; default: all. "
+
+#: plugins/fortune.py:10
+msgid "Plugin to display random fortune; topics: "
+msgstr "Plugin to display random fortune; topics: "
+
+#: plugins/fortune.py:23
+msgid "I predict you will install fortune to make this plug-in work."
+msgstr "I predict you will install fortune to make this plug-in work."
+
+#: plugins/length.py:9
+msgid "Usage: length <string> - returns length of string"
+msgstr "Usage: length <string> - returns length of string"
+
+#: plugins/length.py:10
+msgid "Usage: reverse <string> - reverses string"
+msgstr "Usage: reverse <string> - reverses string"
+
+#: plugins/length.py:11
+msgid "Plugin to return length and reversed string; topics:"
+msgstr "Plugin to return length and reversed string; topics:"
+
+#: plugins/logger.py:8
+msgid "Logging plugin; not intended to interact."
+msgstr "Logging plugin; not intended to interact."
+
+#: plugins/talkback.py:8
+msgid "Usage: talkback - initiates talkback"
+msgstr "Usage: talkback - initiates talkback"
+
+#: plugins/talkback.py:9
+msgid "Usage: stfu - make talkback shut up"
+msgstr "Usage: stfu - make talkback shut up"
+
+#: plugins/talkback.py:10
+msgid "Plugin to repeat what others say in a channel; topics: "
+msgstr "Plugin to repeat what others say in a channel; topics: "
+
+#: plugins/talkback.py:19
+msgid "Thou shall not try to abuse mighty "
+msgstr "Thou shall not try to abuse mighty "
+

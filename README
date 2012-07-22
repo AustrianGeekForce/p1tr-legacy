@@ -1,0 +1,90 @@
+ *** P1tr IRC Bot 0.1alpha *******************
+ *** by AustrianGeekForce and contributors ***
+
+ === INTRODUCTION === 
+P1tr is a solid IRC bot written in Python. For establishing a connection it
+uses Twisted Words by Twisted Laboratories. Later P1tr will be capable of
+connecting to all protocols available in Twisted Words.
+Furthermore P1tr provides a powerful plug-in infrastructure which leaves no
+wish open (if it does, notify us, please).
+
+ === REQUIREMENTS === 
+Following stuff is required to run P1tr successfully:
+    * Python >= 2.4
+    * Twisted >= 2.0
+    * Bazaar VCS (optional; to get the latest sources from trunk)
+P1tr has been successfully tested on the following operating systems:
+    * Gentoo
+    * Mac OS X 10.5.x
+    * Ubuntu 7.10, 8.04
+    * Windows XP SP2
+
+ === INSTALL === 
+In case you want to install a halfway stable version:
+    * Download http://server.austriangeekforce.net/p1tr/p1tr_0.1alpha.tar.gz
+    * Unpack this file in a folder of your choice
+    * Satisfy the requirements if you haven't already done so
+    * Create a copy of file bot.conf.ex called bot.conf and edit it 
+      to suit your needs
+
+ === LAUNCH === 
+Launch P1tr from the command line inside the P1tr directory with:
+$ python bot.py
+To make bot.py clickable or to make it launch via $ ./bot.py you may have
+to make the file executable before:
+$ chmod +x bot.py
+
+ === PLUGINS === 
+At launchtime all files inside plugins/ are being loaded as plug-ins. To find
+out how they work you may have a look at plugins/length.py and
+plugins/talkback.py. They are heavily commented and give a good impression how
+that stuff works. One plug-in can provide an unlimited number of keywords as
+long they don't conflict with the ones of other plug-ins.
+
+ === FAQs === 
+    * IS P1TR CAPABLE OF CONNECTING TO MULTIPLE SERVERS?
+      Yes, it is. In later versions we also plan connectivity to several
+      protocols like Jabber, OSCAR, and MSN.
+    * I MISS A FEATURE; WHAT CAN I DO?
+      If you are lazy you can ask us to do the work for you. We won't
+      discriminate you for that, but we would be even happier if you would
+      send a patch to us which adds the missing feature. If it really does the
+      trick it will be included in the distribution and of course your name
+      appears in big shiny fixed-width letters in the README file.
+      For feature proposals you can use the blueprint function of launchpad.net
+      (https://blueprints.launchpad.net/p1tr) or just use one of the ways of
+      communication mentioned down there.
+    * WHAT AM I ALLOWED TO DO WITH P1TR AND IT'S SOURCE?
+      Thou shalt not skip reading LICENSE.
+      This project is licensed under the revised BSD-license. You can do with
+      P1tr whatever you want as long as you add a notice to the product you
+      make out of it, which says that the product contains code from P1tr. How
+      this notice has to look exactly can be looked up in LICENSE.
+    * P1TR HARMED ANIMALS, KILLED MY FAMILY, BURNED MY HOUSE, KEPT KING ARTHUR
+      FROM SEIZING THE HOLY GRAIL AND HE ERASED EMACS FROM MY HARDDRIVE. YOU
+      ARE RESPONSIBLE FOR THAT!
+      No, we are not. Read LICENSE. P1tr is delivered without warranty of
+      function and anything else.
+    * WHY IS IT CALLED P1TR (AND NOT PETER or PITR)?
+      First, P1tr has a certain idol whose name is copyrighted, so we changed
+      the name to avoid copyright infringement. Second, all bots which live on
+      our server have a '1' in their name.
+
+ === CONTACT === 
+We can be found in our IRC channel #austriangeekforce on irc.freenode.net:6667.
+If you don't like IRC (why are you interested in an IRC bot then?) or you are
+afraid that we would treat you rude you can also send a decent mail to our
+mailing list: p1tr@googlegroups.com
+
+ === BUGS === 
+If you find bugs and security issues we ask you to submit these to our
+launchpad.net bug tracker (https://bugs.launchpad.net/p1tr)
+
+ === AUTHORS === 
+A list of all people who contributed to P1tr in ascending alphabetical order.
+    * BOULLE, Rémi <rboulle@free.fr> - French Translations
+    * EBNER, Stefan <hellboy195@gmail.com> - Debian Package Maintainer
+    * GEVATTER, Siegfried-Angel <siggi.gevatter@gmail.com> - Core Development
+    * ORTNER, Christian <chris.ortner@gmail.com> - Core Development
+    * OTTENEDER, Michael <m.otteneder@gmail.com> - Core Development
+    * REICHEL, Oswald <oswald.reichel@gmail.com> - Plug-In Development

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <html><head>
+        <link rel="stylesheet" type="text/css" href="apidocs.css"/>
+        <title>API docs for &ldquo;p1tr.lib.plugin.Plugin&rdquo;</title>
+        </head>
+        <body><h1 class="class">Class p.l.p.Plugin:</h1><span id="part">Part of <a href="p1tr.lib.plugin.html">p1tr.lib.plugin</a></span><p>known subclasses: <a href="p1tr.plugins.tracker.TrackerPlugin.html">p1tr.plugins.tracker.TrackerPlugin</a>, <a href="p1tr.plugins.vote.VotePlugin.html">p1tr.plugins.vote.VotePlugin</a>, <a href="p1tr.plugins.unix.UnixPlugin.html">p1tr.plugins.unix.UnixPlugin</a>, <a href="p1tr.plugins.seen.SeenPlugin.html">p1tr.plugins.seen.SeenPlugin</a>, <a href="p1tr.plugins.talkback.TalkbackPlugin.html">p1tr.plugins.talkback.TalkbackPlugin</a>, <a href="p1tr.plugins.auth.AuthPlugin.html">p1tr.plugins.auth.AuthPlugin</a>, <a href="p1tr.plugins.karma.KarmaPlugin.html">p1tr.plugins.karma.KarmaPlugin</a>, <a href="p1tr.plugins.insult.InsultPlugin.html">p1tr.plugins.insult.InsultPlugin</a>, <a href="p1tr.plugins.logger.LoggerPlugin.html">p1tr.plugins.logger.LoggerPlugin</a>, <a href="p1tr.plugins.sympathy.SympathyPlugin.html">p1tr.plugins.sympathy.SympathyPlugin</a>, <a href="p1tr.plugins.search.SearchPlugin.html">p1tr.plugins.search.SearchPlugin</a>, <a href="p1tr.plugins.launchpad.LaunchpadPlugin.html">p1tr.plugins.launchpad.LaunchpadPlugin</a>, <a href="p1tr.plugins.topic.TopicPlugin.html">p1tr.plugins.topic.TopicPlugin</a>, <a href="p1tr.plugins.textutils.TextutilsPlugin.html">p1tr.plugins.textutils.TextutilsPlugin</a>, <a href="p1tr.plugins.memo.MemoPlugin.html">p1tr.plugins.memo.MemoPlugin</a>, <a href="p1tr.plugins.basics.BasicsPlugin.html">p1tr.plugins.basics.BasicsPlugin</a>, <a href="p1tr.plugins.newsfeed.NewsfeedPlugin.html">p1tr.plugins.newsfeed.NewsfeedPlugin</a>, <a href="p1tr.plugins.info.InfoPlugin.html">p1tr.plugins.info.InfoPlugin</a></p><div class="toplevel"><div>I'm the mother of all plug-ins. Therefore thou shall inherit from me in 
+case of writing a plugin!
+</div></div><table class="children"><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.__init__">__init__</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin._set_summary">_set_summary</a></td><td><div>Changes content of the top-level help message of this plugin.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin._add_command">_add_command</a></td><td><div>Adds a keyword to self.keywords and, if given, a help message for it
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin._add_help_topic">_add_help_topic</a></td><td><div>Adds a topic and a help message to the help system, but without
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.get_help_topics">get_help_topics</a></td><td><div>Returns a list of top-level help topics, usually named like the
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.help">help</a></td><td><div>Return the help message.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin._load_resource">_load_resource</a></td><td><div>Returns a shelve if it can be opened, otherwise None.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin._get_output">_get_output</a></td><td><div>Runs a program specified in the first argument and returns its 
+output
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin._close_resource">_close_resource</a></td><td><div>Syncs and closes a shelve.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.privmsg">privmsg</a></td><td><div>I call the appropriate function for a keyword
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.listen">listen</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.require_level">require_level</a></td><td><div>Use this function inside a plugin to determine, if the level of the
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.user_joined">user_joined</a></td><td><div>Called when some user joins a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.user_kicked">user_kicked</a></td><td><div>Called when some user gets kicked.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.user_action">user_action</a></td><td><div>Called when some user performs an action (most IRC clients use
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.topic_updated">topic_updated</a></td><td><div>Called when topic gets changed.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.user_renamed">user_renamed</a></td><td><div>Called when some user changes his nickname.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.received_MOTD">received_MOTD</a></td><td><div>Called when server sends a MOTD to me.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.user_quit">user_quit</a></td><td><div>Called when some user leaves the server.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.user_part">user_part</a></td><td><div>Called when some user leaves a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.mode_changed">mode_changed</a></td><td><div>Called when modes inside a channel get changed.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.bot_kicked">bot_kicked</a></td><td><div>Called when someone dares to kick me, teh b0t.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.bot_joined">bot_joined</a></td><td><div>Called when I enter a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.plugin.Plugin.bot_part">bot_part</a></td><td><div>Called when I leave a channel.
+</div></td></tr></table>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.__init__">__init__(self, name):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin._set_summary">_set_summary(self, summary):</a></div>
+            <div class="functionBody"><div>Changes content of the top-level help message of this plugin.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin._add_command">_add_command(self, command, usage='', description=None):</a></div>
+            <div class="functionBody"><div>Adds a keyword to self.keywords and, if given, a help message for it to 
+the help system.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin._add_help_topic">_add_help_topic(self, topic, description):</a></div>
+            <div class="functionBody"><div>Adds a topic and a help message to the help system, but without 
+reserving a keyword.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.get_help_topics">get_help_topics(self):</a></div>
+            <div class="functionBody"><div>Returns a list of top-level help topics, usually named like the 
+commands.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.help">help(self, topic=None):</a></div>
+            <div class="functionBody"><div>Return the help message.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin._load_resource">_load_resource(self, title):</a></div>
+            <div class="functionBody"><div>Returns a shelve if it can be opened, otherwise None. Example usage in a
+plugin: self.data = self._load_resource('info') This creates 
+data/pluginname_info, where everything you write to self.data is stored. 
+After adding information to self.data it is recommended to to 
+self.data.sync() to write changes to the file. In case you need the 
+resource just for a limited time you can close it using 
+self._close_resource(self.data). This does the sync() for you.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin._get_output">_get_output(self, command, stdout=True, stderr=False):</a></div>
+            <div class="functionBody"><div>Runs a program specified in the first argument and returns its output as
+a string.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin._close_resource">_close_resource(self, res):</a></div>
+            <div class="functionBody"><div>Syncs and closes a shelve.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.privmsg">privmsg(self, msg):</a></div>
+            <div class="functionBody"><div>I call the appropriate function for a keyword
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.listen">listen(self, msg):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.require_level">require_level(self, user, level):</a></div>
+            <div class="functionBody"><div>Use this function inside a plugin to determine, if the level of the 
+user, who invokes a keyword, is sufficient. Returns True if it is.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.user_joined">user_joined(self, bot, user, chan):</a></div>
+            <div class="functionBody"><div>Called when some user joins a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.user_kicked">user_kicked(self, bot, chan, kickee, kicker, message):</a></div>
+            <div class="functionBody"><div>Called when some user gets kicked.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.user_action">user_action(self, bot, user, chan, data):</a></div>
+            <div class="functionBody"><div>Called when some user performs an action (most IRC clients use /me for 
+actions).
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.topic_updated">topic_updated(self, bot, user, chan, data):</a></div>
+            <div class="functionBody"><div>Called when topic gets changed.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.user_renamed">user_renamed(self, bot, oldname, newname):</a></div>
+            <div class="functionBody"><div>Called when some user changes his nickname.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.received_MOTD">received_MOTD(self, bot, motd):</a></div>
+            <div class="functionBody"><div>Called when server sends a MOTD to me.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.user_quit">user_quit(self, bot, user, quitmsg):</a></div>
+            <div class="functionBody"><div>Called when some user leaves the server.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.user_part">user_part(self, bot, user, chan, reason=None):</a></div>
+            <div class="functionBody"><div>Called when some user leaves a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.mode_changed">mode_changed(self, bot, user, chan, set, modes, args):</a></div>
+            <div class="functionBody"><div>Called when modes inside a channel get changed.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.bot_kicked">bot_kicked(self, bot, chan, kicker, message):</a></div>
+            <div class="functionBody"><div>Called when someone dares to kick me, teh b0t.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.bot_joined">bot_joined(self, bot, chan):</a></div>
+            <div class="functionBody"><div>Called when I enter a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.plugin.Plugin.bot_part">bot_part(self, bot, chan, reason):</a></div>
+            <div class="functionBody"><div>Called when I leave a channel.
+</div></div>
+            </div></body>
+        
