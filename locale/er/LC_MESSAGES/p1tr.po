@@ -1,0 +1,821 @@
+# translation of messages.po to english
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Christian Ortner <chris.ortner@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: messages\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-05-11 17:05+0200\n"
+"PO-Revision-Date: 2008-05-11 20:49+0200\n"
+"Last-Translator: Christian Ortner <chris.ortner@gmail.com>\n"
+"Language-Team: english <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: lib/helpers.py:102
+msgid "days"
+msgstr "days"
+
+#: lib/helpers.py:103
+msgid "hours"
+msgstr "hours"
+
+#: lib/helpers.py:104
+msgid "minutes"
+msgstr "minutes"
+
+#: lib/helpers.py:105
+msgid "seconds"
+msgstr "seconds"
+
+#: lib/helpers.py:107
+#, python-format
+msgid "%s %s %s %s"
+msgstr "%s %s %s %s"
+
+#: lib/plugin.py:38
+msgid "Usage: "
+msgstr "Usage: "
+
+#: lib/plugin.py:63
+msgid "This plugin has no help."
+msgstr "Has no help this plugin."
+
+#: lib/plugin.py:68
+msgid "topics: "
+msgstr "topics: "
+
+#: lib/plugins.py:78
+msgid "Help topics: "
+msgstr "Help topics: "
+
+#: plugins/auth.py:12
+msgid "Authentification plugin"
+msgstr "Authentification plugin"
+
+#: plugins/auth.py:13
+msgid ""
+"Show that you are you by using your password from registration. Better do "
+"this using private adressing."
+msgstr "Proove your identity with your password, minion. You better be doink this in query."
+
+#: plugins/auth.py:16
+msgid "Registers your nick with password. Better do this using private adressing."
+msgstr "Register your nick with password, minion. You better be doink this in query."
+
+#: plugins/auth.py:31
+msgid "You're authenticated by now."
+msgstr "Dread lord P1tr has accepted your authentification."
+
+#: plugins/auth.py:33
+msgid "Passwords do NOT match. DO NOT TRY TO FOOL ME!"
+msgstr "Not try foolink me with wrong password!"
+
+#: plugins/auth.py:48
+msgid "Your nick has been successfully registered!"
+msgstr "Your nick was registered."
+
+#: plugins/auth.py:50
+msgid "Sorry! Your nick is already registered."
+msgstr "You tryink to steal this already registered nick?"
+
+#: plugins/auth.py:68
+msgid "You need do specify the user and the level"
+msgstr "Won't accept your command unless you tell me user and level"
+
+#: plugins/basics.py:18
+msgid "Plugin for basic IRC operations"
+msgstr "Plugin for dirty work in IRC"
+
+#: plugins/basics.py:19
+msgid "makes P1tr join channel"
+msgstr "convince me of joinink channel"
+
+#: plugins/basics.py:20
+msgid "makes P1tr part channel. If channel is not given he parts the current one."
+msgstr "convince me of partink channel. If you won't tell channel, I will part current one."
+
+#: plugins/basics.py:22
+msgid "shuts P1tr down."
+msgstr "convince me to go to sleep."
+
+#: plugins/basics.py:23
+msgid ""
+"sets channel modes to mode; add nick or mask if required for the particular "
+"mode."
+msgstr "convince me of changink channel modes; if I need for particular mode, add nick or mask."
+
+#: plugins/basics.py:25
+msgid "gives you op if P1tr is able to and you have the appropriate level"
+msgstr "makes me give you dread lord deputy rank, erm, op I mean"
+
+#: plugins/basics.py:27
+msgid "set P1tr's language to code. Example: lang ca"
+msgstr "convince me of talking differently. For humans stupified by GUI: lang ca"
+
+#: plugins/basics.py:29
+msgid "reloads all plugins."
+msgstr "reloads all plugins."
+
+#: plugins/basics.py:30
+msgid "restarts the bot."
+msgstr "convince me to restart - don't dare to do so if not necessary or I will kill you!"
+
+#: plugins/basics.py:41 plugins/basics.py:51 plugins/basics.py:60
+#: plugins/basics.py:83 plugins/basics.py:108 plugins/basics.py:124
+#: plugins/basics.py:134 plugins/basics.py:143 plugins/factoids.py:124
+#: plugins/karma.py:92 plugins/topic.py:45 plugins/tracker.py:63
+#: plugins/tracker.py:82
+#, python-format
+msgid "Unauthorized. Level %s required."
+msgstr "Ha! You actually thinkink you could presume to do this without level %s."
+
+#: plugins/basics.py:80
+msgid "ERROR: Check your mode syntax and if the bot has sufficient rights."
+msgstr "You failed to use the correct mode syntax or at givink me appropriate rights in this channel."
+
+#: plugins/basics.py:94
+#, python-format
+msgid "Your wish is my command, master %s"
+msgstr "You beink lucky, I respect your wish, %s."
+
+#: plugins/basics.py:96
+msgid "You are too minion to get op."
+msgstr "As miserable creature as you I wouldn't try to seize power."
+
+#: plugins/basics.py:104
+#, python-format
+msgid "Language set to %s"
+msgstr "Speakink to you in %s"
+
+#: plugins/basics.py:106
+msgid "Invalid language code."
+msgstr "It seems you be usink wrong language codes."
+
+#: plugins/basics.py:115
+msgid "Reloading plugins..."
+msgstr "Reloadink plugins..."
+
+#: plugins/basics.py:122
+msgid "Done."
+msgstr "Done."
+
+#: plugins/basics.py:141
+msgid "Tell me this in a query."
+msgstr "We resume to this in private conversation."
+
+#: plugins/basics.py:147
+msgid "Not enough arguments provided."
+msgstr "Give me more arguments!"
+
+#: plugins/basics.py:154
+msgid ": I'm going to kill you!"
+msgstr ": Prepare to get slaughtered by my secret weapons of mass destruction!"
+
+#: plugins/factoids.py:12
+msgid "Factoids stores strings to a keyword"
+msgstr "Factoids let me remember several strings to a keyword"
+
+#: plugins/factoids.py:13
+msgid "shows a list of keywords"
+msgstr "lists keywords"
+
+#: plugins/factoids.py:15
+msgid ""
+"If id is given it makes me delete the word's fact with that id, otherwise I "
+"forget everything about word."
+msgstr "If id is given, will be deletink word's fact with id. Else I forget whole word and you can't act against it."
+
+#: plugins/factoids.py:18
+msgid "displays a random fact from any word"
+msgstr "makes me tell you a random fact about any word"
+
+#: plugins/factoids.py:20
+msgid ""
+"searches all factoids for term. Add \"word:something\" in the begining to "
+"find only factoids of something"
+msgstr "makes me looking for term in all factoids. Begin term with \"word:something\" and I will only look in factoids of something"
+
+#: plugins/factoids.py:23
+msgid "Examples: Arthur is the king of the Britons; Romans are hook-nosed."
+msgstr "Examples: Sid is disrespectink P1tr; windows are easily broken"
+
+#: plugins/factoids.py:25
+msgid ""
+"Example: arthur? - response: 0. Arthur is the king of the britons\\n1. "
+"Arthur is seeking the holy grail."
+msgstr "Example: sid? - response: 0. Sid is disrespectink P1tr\\n.1. Sid is havink nice daughter."
+
+#: plugins/factoids.py:66
+msgid "Invalid range, dude."
+msgstr "This range is havink the wrong values."
+
+#: plugins/factoids.py:74
+msgid "is"
+msgstr "is"
+
+#: plugins/factoids.py:74
+msgid "are"
+msgstr "are"
+
+#: plugins/factoids.py:100
+#, python-format
+msgid "Forgot %s's fact number %s"
+msgstr "Chucked %s's fact number %s out of my genius mind"
+
+#: plugins/factoids.py:106 plugins/factoids.py:115
+#, python-format
+msgid "Forgot everything about %s"
+msgstr "Forgot everything about %s"
+
+#: plugins/factoids.py:110 plugins/factoids.py:186
+#, python-format
+msgid "I don't know anything about %s"
+msgstr "Not knowink anything about %s"
+
+#: plugins/factoids.py:118
+#, python-format
+msgid "Forgot \"%s %s\""
+msgstr "Forgot \"%s %s\""
+
+#: plugins/factoids.py:141
+#, python-format
+msgid "%s: Results of your search: %s"
+msgstr "%s: Your search brought these results: %s"
+
+#: plugins/factoids.py:144
+msgid "Sorry, nothing found."
+msgstr "Made me look for non-existent thing."
+
+#: plugins/factoids.py:159
+msgid "You already told me that."
+msgstr "Am not stupid, I know that."
+
+#: plugins/factoids.py:167 plugins/topic.py:92
+msgid "Memorized."
+msgstr "Memorized."
+
+#: plugins/info.py:25
+msgid "Displays various information about P1tr and its environment"
+msgstr "Displays interestink things about me and my livink conditions"
+
+#: plugins/info.py:27
+msgid "info"
+msgstr "info"
+
+#: plugins/info.py:27
+msgid ""
+"Specify in topic what kind of information you want to see. See help info "
+"topics."
+msgstr ""
+
+#: plugins/info.py:29 plugins/info.py:35
+#, python-format
+msgid "Available info topics: %s"
+msgstr ""
+
+#: plugins/info.py:46
+#, python-format
+msgid "Sorry, I can not give you information about %s."
+msgstr ""
+
+#: plugins/info.py:63
+msgid "Python version: "
+msgstr ""
+
+#: plugins/info.py:74
+msgid "I use "
+msgstr ""
+
+#: plugins/info.py:83
+#, python-format
+msgid "I am up and running for %s."
+msgstr ""
+
+#: plugins/info.py:87
+#, python-format
+msgid "My signal char is \"%s\"."
+msgstr ""
+
+#: plugins/info.py:94
+msgid "Twisted version: "
+msgstr ""
+
+#: plugins/info.py:104
+msgid "Uptime: "
+msgstr ""
+
+#: plugins/insult.py:12
+msgid "Plugin to insult somebody on the channel!"
+msgstr ""
+
+#: plugins/insult.py:13
+msgid "Insults nick."
+msgstr ""
+
+#: plugins/insult.py:14
+msgid "Adds phrase to the insults file."
+msgstr ""
+
+#: plugins/insult.py:41
+msgid "Who dares to insult me? "
+msgstr ""
+
+#: plugins/insult.py:50
+msgid "Done, my master."
+msgstr ""
+
+#: plugins/karma.py:10
+msgid "Keeps track of the karma people/things have"
+msgstr ""
+
+#: plugins/karma.py:11
+msgid ""
+"Displays Karma statistics for item. If item is not given, it shows global "
+"karma stats."
+msgstr ""
+
+#: plugins/karma.py:13
+msgid "Resets karma stats for item."
+msgstr ""
+
+#: plugins/karma.py:15
+msgid ""
+"Append ++/-- to a term without spaces in it to in-/decrease the karma of "
+"this term. Use the karma command to get statistics to a certain term."
+msgstr ""
+
+#: plugins/karma.py:26
+msgid "Don't even think of modifying your own karma."
+msgstr ""
+
+#: plugins/karma.py:44
+#, python-format
+msgid "%s is far too good! Practice Evil, my friend."
+msgstr ""
+
+#: plugins/karma.py:47
+#, python-format
+msgid "What a nice %s, so many good deeds..."
+msgstr ""
+
+#: plugins/karma.py:49
+msgid "The ultimate way to Nirvana."
+msgstr ""
+
+#: plugins/karma.py:51
+msgid "Such a bad boy."
+msgstr ""
+
+#: plugins/karma.py:53
+#, python-format
+msgid "%s seems to be an evil genius in training."
+msgstr ""
+
+#: plugins/karma.py:55
+#, python-format
+msgid "Karma statistics for %s: +%i -%i => %i -- %s"
+msgstr ""
+
+#: plugins/karma.py:58 plugins/karma.py:90
+#, python-format
+msgid "%s has no karma recordings yet."
+msgstr ""
+
+#: plugins/karma.py:74
+#, python-format
+msgid ""
+"I keep track of %i people's karma. Overall I noticed %i positive and %i "
+"negative karma points. %s is the most well behaved I know. %s seems to have "
+"a Bachelor's degree in Darkness. The common karma of all people I know is %i."
+msgstr ""
+
+#: plugins/karma.py:88
+#, python-format
+msgid "Reset karma of %s."
+msgstr ""
+
+#: plugins/launchpad.py:26
+msgid "Plugin that provides some Launchpad related features"
+msgstr ""
+
+#: plugins/launchpad.py:28
+msgid "displays information about the given bug."
+msgstr ""
+
+#: plugins/launchpad.py:30
+msgid "active/deactivate listening for Launchpad bugs."
+msgstr ""
+
+#: plugins/launchpad.py:39
+msgid ""
+"Launchpad plugin is running in simple mode as Python module \"launchpadbugs"
+"\" is not installed"
+msgstr ""
+
+#: plugins/launchpad.py:50
+msgid "Who are you to give me orders?"
+msgstr ""
+
+#: plugins/launchpad.py:54
+msgid "I won't annoy you with unwanted bug information, promised."
+msgstr ""
+
+#: plugins/launchpad.py:58
+msgid "Okay, I'm listening ;)."
+msgstr ""
+
+#: plugins/launchpad.py:73
+#, python-format
+msgid "Bug #%d doesn't exist."
+msgstr ""
+
+#: plugins/logger.py:13
+msgid "Logging plugin; not intended to interact."
+msgstr ""
+
+#: plugins/memo.py:15
+msgid "Saves and delivers memos to a given user."
+msgstr ""
+
+#: plugins/memo.py:16
+msgid ""
+"Delivers message to recipient as soon as he shows up somewhere I am (join or "
+"new private message)"
+msgstr ""
+
+#: plugins/memo.py:19
+msgid ""
+"Clear all memos         from storage. If recipient is given, only memos to "
+"him are being         deleted."
+msgstr ""
+
+#: plugins/memo.py:43
+#, python-format
+msgid "%s: %s left a memo for you %s ago: %s"
+msgstr ""
+
+#: plugins/memo.py:59
+msgid "Stupid kid, sending yourself a memo..."
+msgstr ""
+
+#: plugins/memo.py:61
+msgid "I need no memos, I am perfect."
+msgstr ""
+
+#: plugins/memo.py:70
+msgid "Am delieverink."
+msgstr ""
+
+#: plugins/memo.py:72 plugins/sympathy.py:52 plugins/topic.py:110
+msgid "It seems you forgot something, did you?"
+msgstr ""
+
+#: plugins/memo.py:83
+msgid "How evil... Memos have been burnt."
+msgstr ""
+
+#: plugins/memo.py:85
+msgid "Learn how to use matches and come back."
+msgstr ""
+
+#: plugins/search.py:14
+msgid "returns a link of the given search engine searching something"
+msgstr ""
+
+#: plugins/seen.py:21
+msgid "Just use \"seen user\" to get information about user's last action"
+msgstr ""
+
+#: plugins/seen.py:29
+msgid "Usage: seen user"
+msgstr ""
+
+#: plugins/seen.py:34
+msgid ":Huh? You dont see yourself? WTF!?"
+msgstr ""
+
+#: plugins/seen.py:39
+msgid "Gee...I've never seen "
+msgstr ""
+
+#: plugins/seen.py:42
+msgid "saying"
+msgstr ""
+
+#: plugins/seen.py:45
+msgid "joining"
+msgstr ""
+
+#: plugins/seen.py:48
+msgid "getting kicked from"
+msgstr ""
+
+#: plugins/seen.py:51
+msgid "doing"
+msgstr ""
+
+#: plugins/seen.py:54
+msgid "updating the topic"
+msgstr ""
+
+#: plugins/seen.py:57
+#, python-format
+msgid "changing his name from  %s to %s"
+msgstr ""
+
+#: plugins/seen.py:61
+msgid "quitting"
+msgstr ""
+
+#: plugins/seen.py:73
+#, python-format
+msgid "%s was last seen: %s ago, %s"
+msgstr ""
+
+#: plugins/seen.py:77
+msgid "Gee... I've never seen "
+msgstr ""
+
+#: plugins/sympathy.py:18
+msgid "Calculates P1tr's sympathy towards a user."
+msgstr ""
+
+#: plugins/sympathy.py:19
+msgid "Shows sympathy statistics for nick."
+msgstr ""
+
+#: plugins/sympathy.py:21
+msgid "Gives your bot a well deserved snack."
+msgstr ""
+
+#: plugins/sympathy.py:23
+msgid "Use only if bot was bad to you."
+msgstr ""
+
+#: plugins/sympathy.py:25
+msgid "Greet P1tr."
+msgstr ""
+
+#: plugins/sympathy.py:36
+msgid "sucker"
+msgstr ""
+
+#: plugins/sympathy.py:36
+msgid "asshole"
+msgstr ""
+
+#: plugins/sympathy.py:36
+msgid "idiot"
+msgstr ""
+
+#: plugins/sympathy.py:36
+msgid "scum"
+msgstr ""
+
+#: plugins/sympathy.py:46
+#, python-format
+msgid "Sympathy for %s: %.2f"
+msgstr ""
+
+#: plugins/sympathy.py:50
+msgid "I have ignored this user so far."
+msgstr ""
+
+#: plugins/sympathy.py:58
+#, python-format
+msgid "Thank you, %s :)"
+msgstr ""
+
+#: plugins/sympathy.py:60
+msgid "That didn't really taste good..."
+msgstr ""
+
+#: plugins/sympathy.py:65
+#, python-format
+msgid "Probably you're right, %s *grml*"
+msgstr ""
+
+#: plugins/sympathy.py:75 plugins/sympathy.py:80
+#, python-format
+msgid "Hi, %s :)"
+msgstr ""
+
+#: plugins/sympathy.py:92
+#, python-format
+msgid "Welcome back, %s."
+msgstr ""
+
+#: plugins/sympathy.py:95
+msgid "Hopefully not."
+msgstr ""
+
+#: plugins/sympathy.py:98
+#, python-format
+msgid "Thank you, %s ;)"
+msgstr ""
+
+#: plugins/talkback.py:13
+msgid "Plugin to repeat what others say in a channel"
+msgstr ""
+
+#: plugins/talkback.py:14
+msgid "initiates talkback"
+msgstr ""
+
+#: plugins/talkback.py:15
+msgid "lets talkback shut up"
+msgstr ""
+
+#: plugins/talkback.py:23
+msgid "Thou shall not try to abuse mighty "
+msgstr ""
+
+#: plugins/textutils.py:13
+msgid "Plugin to return length and reversed string"
+msgstr ""
+
+#: plugins/textutils.py:14
+msgid "returns the length of the given string"
+msgstr ""
+
+#: plugins/textutils.py:16
+msgid "reverses the given string"
+msgstr ""
+
+#: plugins/topic.py:11
+msgid "Various functions for topic modification."
+msgstr ""
+
+#: plugins/topic.py:12
+msgid ""
+"Performs action. Some actions require text as argument. See help topic "
+"actions."
+msgstr ""
+
+#: plugins/topic.py:14
+msgid ""
+"set <channel> <text>: sets topic to text; add <channel> <text>: appends text "
+"to topic; remove <channel> <index>: if no integer is given for index, the "
+"last item of the topic is being deleted, otherwise the \"indexth\" part of "
+"it; save <channel>: saves the current state of the topic; restore <channel>: "
+"restores a previously saved state of the topic; seperator <text>: sets text "
+"as seperator of the topic parts."
+msgstr ""
+
+#: plugins/topic.py:48
+msgid "You invoked this action incorrectly."
+msgstr ""
+
+#: plugins/topic.py:85
+#, python-format
+msgid "Given index out of range. It must be lower than %s."
+msgstr ""
+
+#: plugins/topic.py:108
+msgid "Topic seperator set to"
+msgstr ""
+
+#: plugins/tracker.py:10
+msgid ""
+"Counts how often a word is mentioned. Case-sensitive. Words get counted only "
+"in one channel."
+msgstr ""
+
+#: plugins/tracker.py:12
+msgid "Adds word to tracklist."
+msgstr ""
+
+#: plugins/tracker.py:13
+msgid "Removes word from tracklist."
+msgstr ""
+
+#: plugins/tracker.py:15
+msgid ""
+"Shows all tracked words for channel. If channel is not given, the words of "
+"the current one get displayed."
+msgstr ""
+
+#: plugins/tracker.py:18
+msgid ""
+"Shows how often word was mentioned and the three people who mention it the "
+"most."
+msgstr ""
+
+#: plugins/tracker.py:54
+#, python-format
+msgid "\"%s\" is already being tracked."
+msgstr ""
+
+#: plugins/tracker.py:59
+#, python-format
+msgid "Tracking \"%s\" now."
+msgstr ""
+
+#: plugins/tracker.py:61
+msgid "You forgot to enter a word to track."
+msgstr ""
+
+#: plugins/tracker.py:76
+#, python-format
+msgid "Removed \"%s\" from tracklist."
+msgstr ""
+
+#: plugins/tracker.py:78 plugins/tracker.py:114
+#, python-format
+msgid "\"%s\" is not yet being tracked."
+msgstr ""
+
+#: plugins/tracker.py:80
+msgid "You forgot to enter a word to untrack."
+msgstr ""
+
+#: plugins/tracker.py:91
+#, python-format
+msgid "Tracked words in %s: %s"
+msgstr ""
+
+#: plugins/tracker.py:109
+#, python-format
+msgid "%s (%i times)"
+msgstr ""
+
+#: plugins/tracker.py:111
+#, python-format
+msgid "\"%s\" was mentioned %i times. Top callers: %s"
+msgstr ""
+
+#: plugins/tracker.py:116
+msgid "You forgot to enter which word's stats should be shown."
+msgstr ""
+
+#: plugins/unix.py:17
+msgid "Plugin to access some popular UNIX applications"
+msgstr ""
+
+#: plugins/unix.py:18
+msgid "displays a random fortune. See \"help fortune types\"."
+msgstr ""
+
+#: plugins/unix.py:20
+msgid "Available fortune types: fortunes, literature, riddles; default: all."
+msgstr ""
+
+#: plugins/unix.py:48
+msgid "I predict you will install fortune to make this "
+msgstr ""
+
+#: plugins/unix.py:74
+msgid "Sorry, this type does not exist."
+msgstr ""
+
+#: plugins/unix.py:80
+msgid "Sorry, I don't know what that means."
+msgstr ""
+
+#: plugins/vote.py:12
+msgid "Plugin for votations"
+msgstr ""
+
+#: plugins/vote.py:13
+msgid "starts a vote."
+msgstr ""
+
+#: plugins/vote.py:14
+msgid "ends a running votation."
+msgstr ""
+
+#: plugins/vote.py:21
+msgid "There is already a running votation."
+msgstr ""
+
+#: plugins/vote.py:24
+msgid "The voting starts... now!"
+msgstr ""
+
+#: plugins/vote.py:29
+msgid "There is no running voting..."
+msgstr ""
+
+#: plugins/vote.py:32
+#, python-format
+msgid ""
+"The voting has ended with %d positive vote(s), %d negative vote(s) and %d "
+"abstain(s). %d people have participated."
+msgstr ""
+
+#: plugins/vote.py:61
+msgid "You have already voted once."
+msgstr ""
+
+#: plugins/vote.py:66
+#, python-format
+msgid ""
+"Vote recorded. There are %d positive vote(s), %d negative vote(s) and %d "
+"abstain(s) so far."
+msgstr ""
+

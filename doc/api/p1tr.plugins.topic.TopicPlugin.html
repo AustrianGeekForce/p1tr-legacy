@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <html><head>
+        <link rel="stylesheet" type="text/css" href="apidocs.css"/>
+        <title>API docs for &ldquo;p1tr.plugins.topic.TopicPlugin&rdquo;</title>
+        </head>
+        <body><h1 class="class">Class p.p.t.TopicPlugin(<a href="p1tr.lib.plugin.Plugin.html">Plugin</a>):</h1><span id="part">Part of <a href="p1tr.plugins.topic.html">p1tr.plugins.topic</a></span><div class="toplevel"><div class="undocumented">Undocumented</div></div><table class="children"><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin.__init__">__init__</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin.topic_updated">topic_updated</a></td><td><div>Called when topic gets changed.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin.topic">topic</a></td><td><div>Dispatches actions and checks permissions.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._set">_set</a></td><td><div>Overwrites the entire topic
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._add">_add</a></td><td><div>Appends an item to the current topic.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._remove">_remove</a></td><td><div>Removes a given or the last part of the topic.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._save">_save</a></td><td><div>Backs up the certain state of a topic for later restoring.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._restore">_restore</a></td><td><div>Changes the current topic of a channel to the saved topic.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._seperator">_seperator</a></td><td><div>Sets a new seperator for the parts of a topic.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.topic.TopicPlugin._check_if_channel_given">_check_if_channel_given</a></td><td><div>Takes all parameters of an action and finds out, if it contains a
+</div></td></tr></table>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin.__init__">__init__(self):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin.topic_updated">topic_updated(self, bot, user, chan, data):</a></div>
+            <div class="functionBody"><div>Called when topic gets changed.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin.topic">topic(self, msg):</a></div>
+            <div class="functionBody"><div>Dispatches actions and checks permissions.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._set">_set(self, msg):</a></div>
+            <div class="functionBody"><div>Overwrites the entire topic
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._add">_add(self, msg):</a></div>
+            <div class="functionBody"><div>Appends an item to the current topic.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._remove">_remove(self, msg):</a></div>
+            <div class="functionBody"><div>Removes a given or the last part of the topic.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._save">_save(self, msg):</a></div>
+            <div class="functionBody"><div>Backs up the certain state of a topic for later restoring.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._restore">_restore(self, msg):</a></div>
+            <div class="functionBody"><div>Changes the current topic of a channel to the saved topic.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._seperator">_seperator(self, msg):</a></div>
+            <div class="functionBody"><div>Sets a new seperator for the parts of a topic.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.topic.TopicPlugin._check_if_channel_given">_check_if_channel_given(self, msg):</a></div>
+            <div class="functionBody"><div>Takes all parameters of an action and finds out, if it contains a 
+channel at the beginning, which is being returned as last element in a 
+tuple - the first is the rest of the params as one string. If this is not 
+given, the current channel is being returned.
+</div></div>
+            </div></body>
+        

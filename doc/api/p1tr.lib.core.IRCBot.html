@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <html><head>
+        <link rel="stylesheet" type="text/css" href="apidocs.css"/>
+        <title>API docs for &ldquo;p1tr.lib.core.IRCBot&rdquo;</title>
+        </head>
+        <body><h1 class="class">Class p.l.c.IRCBot(irc.IRCClient):</h1><span id="part">Part of <a href="p1tr.lib.core.html">p1tr.lib.core</a></span><div class="toplevel"><div>I connect to IRC and I'm the first one to get all those events.
+</div></div><table class="children"><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.__init__">__init__</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.msg">msg</a></td><td><div>Send a message to user or channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.privmsg">privmsg</a></td><td><div>Called when a PRIVMSG appears.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.action">action</a></td><td><div>Called when someone performs an action.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.signedOn">signedOn</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.kickedFrom">kickedFrom</a></td><td><div>Some bastard kicked me! He will pay for that.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.userKicked">userKicked</a></td><td><div>Called when I watch someone getting kicked and smile meanwhile.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.modeChanged">modeChanged</a></td><td><div>Called when modes get changed, obviously
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.joined">joined</a></td><td><div>Called when I come to a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.userJoined">userJoined</a></td><td><div>Called when I see someone entering the channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.left">left</a></td><td><div>Called when it is time to say goodbye and leave the channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.userLeft">userLeft</a></td><td><div>Called when someone has to go.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.topicUpdated">topicUpdated</a></td><td><div>Called when topic is being changed.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.userRenamed">userRenamed</a></td><td><div>Called when some user has the crazy idea to change his name.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.core.IRCBot.receivedMOTD">receivedMOTD</a></td><td><div>Thus Lord Server spake the Message of the day. And this is, what
+</div></td></tr></table>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.__init__">__init__(self, factory):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.msg">msg(self, user, message, length=None):</a></div>
+            <div class="functionBody"><div>Send a message to user or channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.privmsg">privmsg(self, user, channel, msg):</a></div>
+            <div class="functionBody"><div>Called when a PRIVMSG appears.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.action">action(self, user, channel, data):</a></div>
+            <div class="functionBody"><div>Called when someone performs an action.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.signedOn">signedOn(self):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.kickedFrom">kickedFrom(self, channel, kicker, message):</a></div>
+            <div class="functionBody"><div>Some bastard kicked me! He will pay for that.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.userKicked">userKicked(self, kickee, channel, kicker, message):</a></div>
+            <div class="functionBody"><div>Called when I watch someone getting kicked and smile meanwhile.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.modeChanged">modeChanged(self, user, channel, set, modes, args):</a></div>
+            <div class="functionBody"><div>Called when modes get changed, obviously
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.joined">joined(self, channel):</a></div>
+            <div class="functionBody"><div>Called when I come to a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.userJoined">userJoined(self, user, channel):</a></div>
+            <div class="functionBody"><div>Called when I see someone entering the channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.left">left(self, channel, reason):</a></div>
+            <div class="functionBody"><div>Called when it is time to say goodbye and leave the channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.userLeft">userLeft(self, user, channel):</a></div>
+            <div class="functionBody"><div>Called when someone has to go.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.topicUpdated">topicUpdated(self, user, channel, newTopic):</a></div>
+            <div class="functionBody"><div>Called when topic is being changed.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.userRenamed">userRenamed(self, oldname, newname):</a></div>
+            <div class="functionBody"><div>Called when some user has the crazy idea to change his name.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.core.IRCBot.receivedMOTD">receivedMOTD(self, motd):</a></div>
+            <div class="functionBody"><div>Thus Lord Server spake the Message of the day. And this is, what happens
+when he speaks.
+</div></div>
+            </div></body>
+        

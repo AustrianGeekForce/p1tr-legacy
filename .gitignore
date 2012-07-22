@@ -1,8 +1,7 @@
-*.pyc
-*.log
-*~
-build
-dist
-P1tr.egg-info
-__pycache__
-*.swp
+.*
+data/*
+log/*
+bot.conf
+nohup.out
+data/topic_topics
+launchpadbugs

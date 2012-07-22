@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <html><head>
+        <link rel="stylesheet" type="text/css" href="apidocs.css"/>
+        <title>API docs for &ldquo;p1tr.plugins.logger.LoggerPlugin&rdquo;</title>
+        </head>
+        <body><h1 class="class">Class p.p.l.LoggerPlugin(<a href="p1tr.lib.plugin.Plugin.html">Plugin</a>):</h1><span id="part">Part of <a href="p1tr.plugins.logger.html">p1tr.plugins.logger</a></span><div class="toplevel"><div class="undocumented">Undocumented</div></div><table class="children"><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.__init__">__init__</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin._listen_">_listen_</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.user_joined">user_joined</a></td><td><div>Called when some user joins a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.user_kicked">user_kicked</a></td><td><div>Called when some user gets kicked.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.user_action">user_action</a></td><td><div>Called when some user performs an action (most IRC clients use
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.topic_updated">topic_updated</a></td><td><div>Called when topic gets changed.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.user_renamed">user_renamed</a></td><td><div>Called when some user changes his nickname.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.user_quit">user_quit</a></td><td><div>Called when some user leaves the server.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.user_part">user_part</a></td><td><div>Called when some user leaves a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.mode_changed">mode_changed</a></td><td><div>Called when modes inside a channel get changed.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.bot_kicked">bot_kicked</a></td><td><div>Called when someone dares to kick me, teh b0t.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.bot_joined">bot_joined</a></td><td><div>Called when I enter a channel.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.logger.LoggerPlugin.bot_part">bot_part</a></td><td><div>Called when I leave a channel.
+</div></td></tr></table>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.__init__">__init__(self):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin._listen_">_listen_(self, msg):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.user_joined">user_joined(self, bot, user, chan):</a></div>
+            <div class="functionBody"><div>Called when some user joins a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.user_kicked">user_kicked(self, bot, chan, kickee, kicker, message):</a></div>
+            <div class="functionBody"><div>Called when some user gets kicked.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.user_action">user_action(self, bot, user, chan, data):</a></div>
+            <div class="functionBody"><div>Called when some user performs an action (most IRC clients use /me for 
+actions).
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.topic_updated">topic_updated(self, bot, user, chan, data):</a></div>
+            <div class="functionBody"><div>Called when topic gets changed.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.user_renamed">user_renamed(self, bot, oldname, newname):</a></div>
+            <div class="functionBody"><div>Called when some user changes his nickname.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.user_quit">user_quit(self, bot, user, quitmsg):</a></div>
+            <div class="functionBody"><div>Called when some user leaves the server.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.user_part">user_part(self, bot, user, chan, reason=None):</a></div>
+            <div class="functionBody"><div>Called when some user leaves a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.mode_changed">mode_changed(self, bot, user, chan, set, modes, args):</a></div>
+            <div class="functionBody"><div>Called when modes inside a channel get changed.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.bot_kicked">bot_kicked(self, bot, chan, kicker, message):</a></div>
+            <div class="functionBody"><div>Called when someone dares to kick me, teh b0t.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.bot_joined">bot_joined(self, bot, chan):</a></div>
+            <div class="functionBody"><div>Called when I enter a channel.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.logger.LoggerPlugin.bot_part">bot_part(self, bot, chan, reason):</a></div>
+            <div class="functionBody"><div>Called when I leave a channel.
+</div></div>
+            </div></body>
+        

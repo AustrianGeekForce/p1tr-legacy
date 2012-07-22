@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <html><head>
+        <link rel="stylesheet" type="text/css" href="apidocs.css"/>
+        <title>API docs for &ldquo;p1tr.plugins.sympathy.SympathyPlugin&rdquo;</title>
+        </head>
+        <body><h1 class="class">Class p.p.s.SympathyPlugin(<a href="p1tr.lib.plugin.Plugin.html">Plugin</a>):</h1><span id="part">Part of <a href="p1tr.plugins.sympathy.html">p1tr.plugins.sympathy</a></span><div class="toplevel"><div class="undocumented">Undocumented</div></div><table class="children"><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin.__init__">__init__</a></td><td><span class="undocumented">Undocumented</span></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin.sympathy">sympathy</a></td><td><div>Displays the most important sympathy data of a user.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin.snack">snack</a></td><td><div>Increases P1tr's sympathy against snack-giver.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin.dispraise">dispraise</a></td><td><div>Decrease P1tr's sympathy against dispraise-giver.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin.hi">hi</a></td><td><div>When invoked, sympathy of invoker is influenced.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin.user_joined">user_joined</a></td><td><div>Greets a user when coming in and if he is VIP.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin._listen_">_listen_</a></td><td><div>Listens for certain events which influence sympathy + reaction on
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin._influence">_influence</a></td><td><div>Modifies P1tr's sympathy for user by a value calculated with the 
+help
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.plugins.sympathy.SympathyPlugin._prejudice">_prejudice</a></td><td><div>Calculates the prejudice P1tr has against a user, using his nick and
+</div></td></tr></table>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin.__init__">__init__(self):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin.sympathy">sympathy(self, msg):</a></div>
+            <div class="functionBody"><div>Displays the most important sympathy data of a user.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin.snack">snack(self, msg):</a></div>
+            <div class="functionBody"><div>Increases P1tr's sympathy against snack-giver.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin.dispraise">dispraise(self, msg):</a></div>
+            <div class="functionBody"><div>Decrease P1tr's sympathy against dispraise-giver.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin.hi">hi(self, msg):</a></div>
+            <div class="functionBody"><div>When invoked, sympathy of invoker is influenced.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin.user_joined">user_joined(self, bot, user, chan):</a></div>
+            <div class="functionBody"><div>Greets a user when coming in and if he is VIP.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin._listen_">_listen_(self, msg):</a></div>
+            <div class="functionBody"><div>Listens for certain events which influence sympathy + reaction on 
+certain events like return from afk.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin._influence">_influence(self, user, server, factor):</a></div>
+            <div class="functionBody"><div>Modifies P1tr's sympathy for user by a value calculated with the help of
+factor. First argument has to be an object of the User class (e.g. 
+msg.user).
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.plugins.sympathy.SympathyPlugin._prejudice">_prejudice(self, user):</a></div>
+            <div class="functionBody"><div>Calculates the prejudice P1tr has against a user, using his nick and his
+hostmask. First argument has to be an object of the User class (e.g. 
+msg.user).
+</div></div>
+            </div></body>
+        

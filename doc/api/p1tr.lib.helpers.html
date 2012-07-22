@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <html><head>
+        <link rel="stylesheet" type="text/css" href="apidocs.css"/>
+        <title>API docs for &ldquo;p1tr.lib.helpers&rdquo;</title>
+        </head>
+        <body><h1 class="module">Module p.l.helpers</h1><span id="part">Part of <a href="p1tr.lib.html">p1tr.lib</a></span><div class="toplevel"><div>I help P1tr wherever I can.
+</div></div><table class="children"><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.parse_args">parse_args</a></td><td><div>I put command line args and their proper values together in a
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.complete_args_dict">complete_args_dict</a></td><td><div>Compatibility function; adds all missing values to the command line
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.load_config">load_config</a></td><td><div>I return a arg_list of IRCServer inherited objects from config.py.
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.load_language">load_language</a></td><td><div>Installs language lcode; if not given the language from the 
+configuration
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.try_to_log_msg">try_to_log_msg</a></td><td><div>Attempting to log something. If logfiles don't exist because logging
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.time_ago_in_words">time_ago_in_words</a></td><td><div>I convert a the difference in time for a numeric to a textual
+</div></td></tr><tr class="function"><td>Function</td><td><a href="#p1tr.lib.helpers.get_time_part">get_time_part</a></td><td><span class="undocumented">Undocumented</span></td></tr></table>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.parse_args">parse_args(arg_list):</a></div>
+            <div class="functionBody"><div>I put command line args and their proper values together in a 
+dictionaryionary and check, if the value is valid.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.complete_args_dict">complete_args_dict(args):</a></div>
+            <div class="functionBody"><div>Compatibility function; adds all missing values to the command line 
+arguments dictionaryionary.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.load_config">load_config():</a></div>
+            <div class="functionBody"><div>I return a arg_list of IRCServer inherited objects from config.py.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.load_language">load_language(lcode=None):</a></div>
+            <div class="functionBody"><div>Installs language lcode; if not given the language from the 
+configuration file will be installed. Useful for language changes at 
+runtime. Returns a tuple; first item is the new language; second item is a 
+arg_list of all available languages.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.try_to_log_msg">try_to_log_msg(logs, channel, user, message):</a></div>
+            <div class="functionBody"><div>Attempting to log something. If logfiles don't exist because logging has
+been disabled I have no effect.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.time_ago_in_words">time_ago_in_words(delta):</a></div>
+            <div class="functionBody"><div>I convert a the difference in time for a numeric to a textual 
+representation. Takes a datetime type object as argument.
+</div></div>
+            </div>
+            <div class="function">
+            <div class="functionHeader">def <a name="p1tr.lib.helpers.get_time_part">get_time_part(val, unit):</a></div>
+            <div class="functionBody"><div class="undocumented">Undocumented</div></div>
+            </div></body>
+        
